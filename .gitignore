@@ -1,3 +1,7 @@
 test.js
 fortune_server.py
 fortune_server.py
+venv/
+__pycache__/
+nohup.out
+.env

@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="manifest" href="/static/manifest.json">
+  <meta name="theme-color" content="#1e1e1e">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magic Mike</title>
   <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
     body {
-      font-family: 'Calibri', Times, serif, sans-serif;
-      background: linear-gradient(to bottom right, #4b0082, #000);
-      color: white;
+      font-family: 'Lexend Mega', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background: linear-gradient(to bottom right, #aa42ef, #3b029f);
+      color: rgb(252, 255, 156);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* fill the screen vertically */
       text-align: center;
       padding: 50px;
     }
 
     h1 {
-      font-size: 3.0rem;
-      margin-bottom: 8px;
-    }
-    h2 {
-      font-size: 1.3rem;
-      margin-bottom: 20px;
-      margin-top: 10px;
-    }
+  font-size: 3rem;
+  margin-bottom: 0.3em; /* small gap */
+}
 
-    #answer {
-      margin-top: 30px;
-      font-size: 1.5rem;
-      font-weight: bold;
-      min-height: 2em;
-    }
+    h2 {
+    font: Cambria
+    font-size: 1.0rem;
+    margin-bottom: .9em;
+    font-weight: normal;
+  }
+
+#answer {
+  font: serif;
+  margin-top: 2em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  min-height: 4em;
+  text-shadow: 2px 2px 2px rgba(248, 255, 106, 0.508);
+  padding: 0.2em 0.3em;
+  border-radius: 3px;
+}
 
     /* -----------------------
        BUTTON STYLE OPTIONS
@@ -78,5 +97,11 @@
     }
   });
 </script>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/static/service-worker.js");
+  }
+</script>
+
 </body>
 </html>
