@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 @app.route("/")
-def index():
+def home():
     return render_template("magic_mike.html")  # serves the HTML
 
 @app.route("/fortune")
