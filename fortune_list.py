@@ -7,7 +7,8 @@ FORTUNES_LIST = [
   "The best liar lies to themselves first.",
   "I see nothing except your fat ass.", 
   "At some point you deserve a beating.", 
-  "Every rom-com has a happy ending.", 
+  "Every rom-com has a happy ending.",
+  "You can put your boots in the oven but that don't make 'em biscuits",  
   "Bake with the flour you've got.", 
   "Feel guilt but maintain indifference.", 
   "You were not meant for the Cretaceous period.", 
@@ -43,11 +44,21 @@ FORTUNES_LIST = [
   "A god ignored is a demon born.", 
   "You can't ride two horses with one ass.",
   "Creatures are very fond of proving their steadfast adherence to nonsense.", 
-  "The only way out is through.", 
+  "The only way out is through.",
+  "Blood of the covenant is thicker than water of the womb",
+  "Experience is what you get when you don't get what you wanted.",
+  "You can shuffle a deck as many times as you want, but you're still playing with the same deck.",
+  "Sometimes you have to climb a tree to see what's on the ground.",
+  "Only boring people are bored",
+  "Everything is best done in moderation; this goes for moderation as well.",
+  "A new broom sweeps clean, but an old broom knows the corners",
+  "Hunger is the best sauce",
+  "They threw the pattern away when they made you."
   "Your eyes look like they followed the stars to meet me here. ",
   "I would rather lose because I played badly than because I didn’t understand the game. ",
   "There is no creature more powerful than a human who learns to love without fear.",
-   "Where there is no chaos, there is no opportunity.", 
+   "Where there is no chaos, there is no opportunity.",
+   "Even a chicken knows when to get out of the rain" 
   "If you meet the Budda on the road, you must kill him.", 
   "If you aint cheatin', you aint tryin.'", 
   "Growth begets complexity.", 
@@ -57,4 +68,8 @@ FORTUNES_LIST = [
   "Make it easy and obvious for you, or the person you’re influencing, to do the desired behavior.", 
   "Sometimes it is possible to commit no errors and still fail. that is not weakness; that is life.",
   "Guilt is moral licensing so you can do it again.",
-  "When you have eliminated the impossible, whatever remains must be the truth."]
+  "When you have eliminated the impossible, whatever remains must be the truth.", 
+  "If you didn't know so much, you might learn something.", 
+  "I'm going to do a little trick for you... do you love me yet?", 
+  
+  ]
