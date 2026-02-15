@@ -6,7 +6,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Magic Mike</title>
+  <title>Magic Mike 🔮</title>
   <style>
     * {
   margin: 0;
@@ -15,7 +15,7 @@
 }
     body {
       font-family: 'Lexend Mega', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      background: linear-gradient(to bottom right, #aa42ef, #3b029f);
+      background: linear-gradient(to bottom right, #b85cf6, #712fe2);
       color: rgb(252, 255, 156);
       display: flex;
       flex-direction: column;
@@ -73,7 +73,7 @@
 </head>
 <body>
   <h1> Magic Mike </h1>
-  <h2> Your Virtual Soothsayer </h2>
+  <h2> Your Virtual Fortune Teller </h2>
 
   <!-- Button -->
   <button class="btn-neon" id="shakeBtn"> Shake It </button>
@@ -92,7 +92,7 @@
       const data = await response.json();
       answerDiv.textContent = data.fortune;
     } catch (error) {
-      answerDiv.textContent = "Oops! Could not reach Magic Mike.";
+      answerDiv.textContent = "Try again, bitch.";
       console.error(error);
     }
   });
