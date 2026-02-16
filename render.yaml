@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: magic-mike
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn fortune_server:app
