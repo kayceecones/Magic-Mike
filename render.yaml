@@ -2,5 +2,21 @@ services:
   - type: web
     name: magic-mike
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn fortune_server:app
+    buildCommand: |
+      if [ -f requirements.txt ]; then
+        pip install -r requirements.txt
+      elif [ -f Mikes_Python/requirements.txt ]; then
+        pip install -r Mikes_Python/requirements.txt
+      else
+        echo "requirements.txt not found in repo root or Mikes_Python" >&2
+        exit 1
+      fi
+    startCommand: |
+      if [ -f fortune_server.py ]; then
+        gunicorn fortune_server:app
+      elif [ -f Mikes_Python/fortune_server.py ]; then
+        gunicorn --chdir Mikes_Python fortune_server:app
+      else
+        echo "fortune_server.py not found in repo root or Mikes_Python" >&2
+        exit 1
+      fi

@@ -1,0 +1,1 @@
+web: sh -c 'if [ -f fortune_server.py ]; then gunicorn fortune_server:app; elif [ -f Mikes_Python/fortune_server.py ]; then gunicorn --chdir Mikes_Python fortune_server:app; else echo "fortune_server.py not found in repo root or Mikes_Python" >&2; exit 1; fi'
